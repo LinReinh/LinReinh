@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: 'Overpass', sans-serif;
+}
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+.hero-container {
+    background-image: url(/blogr-landing-page-main/images/bg-pattern-intro-desktop.svg), linear-gradient(hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+    background-size: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    border-radius: 0 0 0 7rem;
+    display: flex;
+    flex-wrap: wrap;
+        .navbar-one {
+            width: 100%;
+            height: 50px;
+            padding: 50px 0;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .inner-hero {
+            display: block; 
+            width: 100%;
+            text-align: center;
+            h1 {
+                padding-bottom: 30px;
+                font-size: 2.4rem;
+                color: white;
+                font-weight: 400;
+            }
+            p {
+                padding-bottom: 50px;
+                color: white;
+                font-size: 1.2rem;
+                font-weight: 100;
+            }
+        .hero-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            .startforfree {
+                background-color: white;
+                font-size: 1rem;
+                border: none;
+                color: #FF3D54;
+                padding: 1em 1.5em;
+                margin:0 0.3em 0.3em 0;
+                border-radius:2em;
+                transition-duration: 0.4s;
+                }
+            .startforfree:hover {
+                background-color: #FF3D54; /* Green */
+                color: white;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+            .learnmore {
+                border: 0.1em solid white;
+                background-color: transparent;
+                font-size: 1rem;
+                color: white;
+                padding: 1em 1.5em;
+                margin:0 0.3em 0.3em 0;
+                border-radius: 2em;
+                text-decoration: none;
+                transition-duration: 0.4s;
+            }
+            .learnmore:hover {
+                color: white;
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            }
+        }
+    }
+}
+.container {
+    max-width: 1200px;
+    article {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 33px;
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: hsl(240, 10%, 16%);
+            padding: 1.5rem;
+        }
+        p {
+            font-size: 0.9rem;
+            font-weight: 300;
+            color: hsl(240, 2%, 79%);
+        }
+        .dashboard-image {
+            width: 100%;
+            padding-bottom: 1rem;
+        }
+    }
+}
