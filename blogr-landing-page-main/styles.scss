@@ -84,7 +84,43 @@
         width: 100%;
         padding: 30px;
         text-align: center;
-        &.designbox { // Artikeln "State of Art"
+        &.article-1 {
+            .computer-image {
+                img {
+                    width: 100%;
+                }
+            }
+            @media only screen and (min-width: 768px) {
+                padding: 30px;
+                .start-header {
+                    margin: auto;
+                }
+                img {
+                    width: 100%;
+                }
+                .text-block {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .computer-image {
+                        background-image: url(/images/illustration-editor-desktop.svg); 
+                        img {
+                            display: none;
+                        }
+                    }
+                    .inner-box-container-1 {
+                        width: 50%;
+                        .textbox {
+                            text-align: left;
+                            h2 {
+                                padding: 20px 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.article-3 { // Artikeln "State of Art"
             width: 100%;
             margin-top: 150px;
             padding-bottom: 80px;
@@ -148,27 +184,6 @@
             padding-bottom: 1rem;
             @media only screen and (min-width: 768px) {
                 width: 50%;
-            }
-        }
-    }
-    .section-1 {
-        width: 100%;
-        .start-header {
-           
-        } 
-        @media only screen and (min-width: 768px) {
-            display: flex;
-            .box1 {
-                width: 40%;
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
-            }
-            .box2 {
-                width: 40%; 
-            }
-            .dashboard-image {
-                width: 100%;
             }
         }
     }

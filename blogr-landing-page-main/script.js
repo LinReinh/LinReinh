@@ -7,3 +7,7 @@
 //       x.className = "topnav";
 //     }
 //   }
+
+const select = document.querySelector('#mobile-illustration');
+
+
