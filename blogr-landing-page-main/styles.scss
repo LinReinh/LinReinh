@@ -85,16 +85,24 @@
         padding: 30px;
         text-align: center;
         &.article-1 {
-            .computer-image {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            .start-header {
+                margin: auto;
+            }
+            .mobile-image {
                 img {
                     width: 100%;
                 }
             }
-            @media only screen and (min-width: 768px) {
-                padding: 30px;
-                .start-header {
-                    margin: auto;
+            .text-block {
+                .desktop-image { // Hide desktop image in mobile view
+                    display: none;
                 }
+            }
+            @media only screen and (min-width: 768px) { //From 768px and up -->
+                padding: 40px;
                 img {
                     width: 100%;
                 }
@@ -102,12 +110,19 @@
                     width: 100%;
                     display: flex;
                     flex-wrap: wrap;
-                    .computer-image {
-                        background-image: url(/images/illustration-editor-desktop.svg); 
-                        img {
-                            display: none;
-                        }
+                    .mobile-image { // Hide mobile view in tablet/desktop mode
+                        display: none;
                     }
+                    .desktop-image { // Show desktop img
+                        display: block;
+                        width: 80%;
+                        order: 2;
+                        position: absolute;
+                        left: 50%;
+                        img {
+                            
+                        }
+                    } 
                     .inner-box-container-1 {
                         width: 50%;
                         .textbox {
